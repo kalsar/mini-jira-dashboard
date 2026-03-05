@@ -1,0 +1,192 @@
+.page {
+  min-height: 100vh;
+}
+
+.toolbarInput {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.toolbarInput:focus {
+  border-color: #64748b;
+}
+
+.column {
+  border: 1px solid #dbe2ea;
+  border-radius: 0.75rem;
+  /* background: #f8fafc; */
+  background-color: #F3F4F6;
+  min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  /* padding: 0.55rem 0.6rem; */
+    padding: 0.75rem 0.9rem;
+}
+
+.countBadge {
+  border-radius: 9999px;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.columnBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.8rem;
+  flex: 1;
+}
+
+.taskCard {
+  border: 1px solid #dbe2ea;
+  border-radius: 0.7rem;
+  background: #ffffff;
+  padding: 0.75rem;
+  cursor: grab;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    border-color 0.12s ease;
+}
+
+.taskCard:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+.taskCard:active {
+  cursor: grabbing;
+}
+
+.priorityBadge {
+  border-radius: 9999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.lowPriority {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mediumPriority {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.highPriority {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(2, 6, 23, 0.55);
+}
+
+.modalCard {
+  width: min(640px, 100%);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 1.15rem;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.input {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.92rem;
+  background: #ffffff;
+  color: #0f172a;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #64748b;
+}
+
+.errorText {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.75rem;
+}
+
+:global(.dark) .toolbarInput {
+  border-color: #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+:global(.dark) .column {
+  border-color: #334155;
+  background: #111827;
+}
+
+:global(.dark) .columnHeader {
+  border-color: #334155;
+}
+
+:global(.dark) .countBadge {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+
+:global(.dark) .taskCard {
+  border-color: #334155;
+  background: #0f172a;
+}
+
+:global(.dark) .taskCard:hover {
+  border-color: #64748b;
+  box-shadow: 0 8px 16px rgba(2, 6, 23, 0.45);
+}
+
+:global(.dark) .modalCard {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+:global(.dark) .field {
+  color: #cbd5e1;
+}
+
+:global(.dark) .input {
+  border-color: #475569;
+  background: #020617;
+  color: #e2e8f0;
+}
