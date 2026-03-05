@@ -1,3 +1,19 @@
+
+
+// Run project by : npm run dev
+
+//feature :
+1: three column of task 
+2: add , edit , delete 
+3: saved data in local storage 
+
+
+// this this github repo lonk: https://github.com/kalsar/mini-jira-dashboard
+
+// live link: https://mini-jira-dashboard.vercel.app/
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
